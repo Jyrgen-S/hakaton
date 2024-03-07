@@ -1,7 +1,17 @@
 function hint() {
-    document.getElementById("hint").innerHTML = "hint here.";
-  }
-  
+    setTimeout(function() {
+        document.getElementById("hint1").innerHTML = "Hint 1";
+    }, 10);
+
+    setTimeout(function() {
+        document.getElementById("hint2").innerHTML = "Hint 2";
+    }, 20);
+
+    setTimeout(function() {
+        document.getElementById("hint3").innerHTML = "Hint 3";
+    }, 30);
+}
+
 function getinPu(formId, ansId , outID){
     var x = document.getElementById(formId);
     var text = "";
