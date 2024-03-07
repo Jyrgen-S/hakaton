@@ -41,6 +41,11 @@ function input(x, ansId, outID ,number){
   function handleForm(event) { event.preventDefault(); } 
   form.addEventListener('submit', handleForm);
 
+  var form = document.getElementById("fm1");
+  function handleForm(event) { event.preventDefault(); } 
+  form.addEventListener('submit', handleForm);
+
+  
   function changePic(x){
     document.getElementById(x).src='https://placehold.co/250x250';
   }
