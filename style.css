@@ -1,0 +1,18 @@
+.hint-container {
+    margin: 50px;
+}
+
+.image-container {
+    position: relative;
+    max-width: 200px; 
+    max-height: 200px; 
+}
+
+
+
+.image-container button {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin: 5px;
+}
