@@ -14,3 +14,21 @@
     right: 0;
     margin: 5px;
 }
+
+
+@media (max-width: 1250px) {
+    #clue {
+        display: none;
+    }
+    .image-container {
+     
+        max-width: 200px; 
+        max-height: 200px; 
+    }
+  }
+
+  @media (min-width: 1250px) {
+   #mobileClue{
+        display: none;
+   }
+}
