@@ -1,5 +1,9 @@
-.hint-container {
-    margin: 50px;
+body, p {
+    font-family: 'Lexend Deca', sans-serif;
+}
+
+h1, h2, h3 {
+    font-family: 'Lexend Zetta', sans-serif;
 }
 
 .image-container {
@@ -15,3 +19,11 @@
     right: 10px;
     cursor: pointer; 
 }
+#hint1, #hint2, #hint3 {
+    margin-top: 10px;
+}
+.hint-container {
+    background-color: palegoldenrod;
+    border-radius: 5px;
+   
+}  

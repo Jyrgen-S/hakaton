@@ -1,6 +1,6 @@
 function hint() {
     setTimeout(function() {
-        document.getElementById("hint1").innerHTML = "Hint 1";
+        document.getElementById("hint1").innerHTML = "Hint Hint sssss sssssss Hint Hint Hint";
     }, 10);
 
     setTimeout(function() {
