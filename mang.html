@@ -9,24 +9,70 @@
     <link rel="icon" href="./favicon.ico" type="image/x-icon">
   </head>
   <body>
-    <main>
-        <h1>Welcome to My Website</h1>  
-    </main>
-    <div id="input">
-
+    <div>
+      <h1>Ülesanne 1</h1>  
+      <p>lorem ipsum</p>
+      <form id="frm1" >
+        <label for="fname">Sisestage parool:</label><br>
+        <input type="text" name="fname" value=""><br>
+      </form> 
+      <button onclick="getinPu('frm1', 'ans1', 'demo1')">Check</button>
+      <p id="ans1" style="display: none;">qwerty</p>
+      <p id="demo1"></p>
+    
+      <div id="clue1"></div>
     </div>
-    <div id="clue">
-
+    
+    <div>
+      <h1>Ülesanne 2</h1>  
+      <p>lorem ipsum</p>
+      <form id="frm2" >
+        <label for="fname">Sisestage parool:</label><br>
+        <input type="text" name="fname" value=""><br>
+      </form> 
+      <button onclick="getinPu('frm2', 'ans2', 'demo2')">Check</button>
+      <p id="ans2" style="display: none;">Anette2010</p>
+      <p id="demo2"></p>
+    
+      <div id="clue2"></div>
     </div>
-	<script src="index.js">
-        function input(){
+
+    <div>
+      <h1>Ülesanne 3</h1>  
+      <p>lorem ipsum</p>
+      <form id="frm3" >
+        <label for="fname">Sisestage parool:</label><br>
+        <input type="text" name="fname" value=""><br>
+      </form> 
+      <button onclick="getinPu('frm3', 'ans3', 'demo3')">Check</button>
+      <p id="ans3" style="display: none;">JamesBond007</p>
+      <p id="demo3"></p>
+    
+      <div id="clue2"></div>
+    </div>
+    
+    <script>
+     function getinPu(formId, ansId , outID){
+          var x = document.getElementById(formId);
+          var text = "";
+          text += x.elements[0].value;
+          input(text, ansId , outID);
+        }
+    
+        function input(x, ansId, outID){
+            let text1 = document.getElementById(ansId).innerHTML; 
+            let text2 = x;
+    
             
+            let result = text1.localeCompare(x);
+    
+            if (result == 0) {
+              document.getElementById(outID).innerHTML = "Murdsid parooli. Parool oli " + document.getElementById(ansId).innerHTML;
+            } else {
+              document.getElementById(outID).innerHTML = "Ei sisestanud õiget parooli";
+            }
         }
-
-        function clue(){
-
-        }
-
     </script>
+    
   </body>
-</html
+</html>
