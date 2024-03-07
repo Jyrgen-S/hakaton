@@ -7,6 +7,8 @@ function getinPu(formId, ansId , outID){
     var text = "";
     text += x.elements[0].value;
     input(text, ansId , outID);
+    preventDefault();
+    return false;
   }
 
   
@@ -22,4 +24,9 @@ function input(x, ansId, outID){
       } else {
         document.getElementById(outID).innerHTML = "Ei sisestanud õiget parooli";
       }
+      return false;
   }
+
+  var form = document.getElementById("frm1");
+  function handleForm(event) { event.preventDefault(); } 
+  form.addEventListener('submit', handleForm);
