@@ -8,6 +8,7 @@
     background:#478033;
     color:#f0f0f0;
     overflow:auto;
+    position: sticky;
 }
 /*styling for anchors in navbar id*/
 #navbar a{
@@ -61,4 +62,7 @@ body{
 }
 .password-tips p, .password-tips h2{
     padding: 2.5vh 10% 2.5vh 10%;
+}
+#hamburger-menu{
+    display: none;
 }

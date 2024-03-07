@@ -7,7 +7,8 @@
 #navbar{
     background:#3780d6;
     color:#f0f0f0;
-    overflow:auto;
+    overflow:hidden;
+    position: relative;
 }
 /*styling for anchors in navbar id*/
 #navbar a{
@@ -17,7 +18,7 @@
 /*navbar id heading styling*/
 #navbar img{
     float:left;
-    height: 4em;
+    height: 3.5em;
 }
 /*styling for unordered lists in navbar id*/
 #navbar ul {
@@ -69,4 +70,7 @@
 body{
     background: #f3fafc;
     color: #000000;
+}
+#hamburger-menu{
+    display: none;
 }
