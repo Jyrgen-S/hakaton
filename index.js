@@ -6,10 +6,7 @@ function getinPu(formId, ansId , outID){
     console.log( x.elements[0])
     input(text, ansId , outID, number);
 
-    var mobileForm = document.getElementById("fm2");
-    if (mobileForm) {
-        input(text, 'ans2', 'demo2', '2');
-    }
+   
     
   }
 
@@ -38,5 +35,16 @@ function input(x, ansId, outID ,number){
 
   
   function changePic(x){
-    document.getElementById(x).src='./img/10yo_boy_2 1.png';
+    console.log(x)
+    if (x == 'lukk1' || x == 'lukk2'){
+      document.getElementById(x).src='./img/10yo_boy_2 1.png';
+    }
+
+    if (x == 'lukk3' || x == 'lukk4'){
+      document.getElementById(x).src='./img/16yo_girl_2.png';
+    }
+
+    if (x == 'lukk5' || x == 'lukk6'){
+      document.getElementById(x).src='./img/shady_dude 1.png';
+    }
   }
