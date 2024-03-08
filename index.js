@@ -19,6 +19,11 @@ function getinPu(formId, ansId , outID){
     text += x.elements[0].value;
     console.log( x.elements[0])
     input(text, ansId , outID, number);
+
+    var mobileForm = document.getElementById("fm2");
+    if (mobileForm) {
+        input(text, 'ans2', 'demo2', '2');
+    }
     
   }
 
