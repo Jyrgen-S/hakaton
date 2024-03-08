@@ -1,0 +1,37 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+#main-char{
+    margin: 5vh 0 5vh 0;
+}
+#main-char-intro{
+    margin: 5vh 10% 5vh 10%;
+}
+#play-btn{
+    width: 25vw;
+    height: 8vh;
+}
+#navbar{
+    overflow: hidden;
+    position: relative;
+    display: block;
+}
+#nav-buttons{
+    display:none;
+    float: right;
+}
+#nav-buttons a{
+    padding: 1vh;
+    text-decoration: none;
+    font-size: 1em;
+    display: block;
+}
+#hamburger-menu{
+    display: block;
+    float:right;
+    position: relative;
+    right: 3vw;
+    top: 3vh;
+}

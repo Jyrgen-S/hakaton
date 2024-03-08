@@ -21,18 +21,10 @@ h1, h2, h3 {
     max-width: 30px;
     height: auto;
     position: absolute;
-    bottom: 10px;
-    right: 10px;
+    bottom: 5px;
+    right: 5px;
     cursor: pointer; 
-}
-#hint1, #hint2, #hint3 {
-    margin-top: 10px;
-}
-.hint-container {
-    background-color: palegoldenrod;
-    border-radius: 5px;
-   
-}  
+} 
 
 @media (max-width: 1250px) {
     #clue {

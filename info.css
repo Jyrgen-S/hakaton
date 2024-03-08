@@ -1,0 +1,68 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+/*styling for navbar id*/
+#navbar{
+    background:#478033;
+    color:#f0f0f0;
+    overflow:auto;
+    position: sticky;
+}
+/*styling for anchors in navbar id*/
+#navbar a{
+    color:#f0f0f0;
+    text-decoration: none;
+}
+/*navbar id heading styling*/
+#navbar img{
+    float:left;
+    height: 4em;
+}
+/*styling for unordered lists in navbar id*/
+#navbar ul {
+    float:right;
+    list-style: none;
+    padding-right: 20px;
+}
+/*styling for list items in unordered lists in navbar id*/
+#navbar ul li{
+    float:left;
+}
+/*styling for anchor links in list items in unordered lists in navbar id*/
+#navbar ul li a{
+    display:block;
+    padding:1.25em;
+    text-align:center;
+}
+/*styling for anchor links in hover in list items in unordered lists in navbar id and the current class*/
+#navbar ul li a:hover, .current{
+    background:#52a036;
+}
+h1{
+    font-size:8em;
+    text-align: center;
+    padding: 2.5vh 10% 2.5vh 10%;
+}
+body{
+    background: #f3fafc;
+    color: #000000;
+}
+.container{
+    margin: 5vh 10% 5vh 10%;
+
+}
+.password-tips {
+    text-align: left;
+}
+.alt-color{
+    background: #52a036;
+    color: #f0f0f0;
+}
+.password-tips p, .password-tips h2{
+    padding: 2.5vh 10% 2.5vh 10%;
+}
+#hamburger-menu{
+    display: none;
+}
