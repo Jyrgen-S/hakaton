@@ -33,5 +33,5 @@ function input(x, ansId, outID ,number){
 
   
   function changePic(x){
-    document.getElementById(x).src='Img/10yo_boy_2 1.png';
+    document.getElementById(x).src='./img/10yo_boy_2 1.png';
   }
