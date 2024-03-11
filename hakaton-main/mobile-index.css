@@ -1,0 +1,29 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+#main-char{
+    margin: 0 0 5vh 0;
+}
+#main-char-intro{
+    margin: 5vh 10% 5vh 10%;
+}
+#play-btn{
+    width: 25vw;
+    height: 8vh;
+}
+#play-btn:hover{
+    width: 24.5vw;
+    height: 7.5vh;
+}
+#nav-buttons{
+    display:block;
+    float: right;
+}
+#nav-buttons a{
+    padding: 1vh;
+    text-decoration: none;
+    font-size: 1em;
+    display: block;
+}
