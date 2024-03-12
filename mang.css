@@ -72,6 +72,9 @@ h1, h2, h3 {
         max-width: 200px; 
         max-height: 200px; 
     }
+    #mob2,#mob3 {
+        display: none;
+    }
   }
 
   @media (min-width: 1250px) {
