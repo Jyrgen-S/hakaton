@@ -18,7 +18,7 @@
 /*navbar id heading styling*/
 #navbar img{
     float:left;
-    height: 4em;
+    height: 3.5em;
 }
 /*styling for unordered lists in navbar id*/
 #navbar ul {
@@ -76,4 +76,20 @@ body{
     .toggle-text i {
         display: none;
     }
+}
+
+#main-content{
+    min-height: 100vh;
+}
+footer{
+    background: #478033;
+    text-align: center;
+    padding: 1vh;
+    color: #f3fafc;
+}
+#copyright{
+    text-decoration: underline;
+}
+#copyright:hover{
+    color: #52a036;
 }

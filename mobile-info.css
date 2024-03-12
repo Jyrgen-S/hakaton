@@ -8,18 +8,8 @@ h1{
     text-align: center;
     padding: 2.5vh 10% 2.5vh 10%;
 }
-#navbar{
-    overflow: hidden;
-}
 #nav-buttons{
-    display:none;
-}
-#hamburger-menu{
-    display: block;
-    float:right;
-    position: relative;
-    right: 3vw;
-    top: 3vh;
+    display:block;
 }
 
 
