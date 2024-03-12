@@ -62,26 +62,6 @@ h1, h2, h3 {
 #navbar ul li a:hover, .current{
     background:#80a7d6;
 }
-/* Mobile view*/
-@media (max-width: 1250px) {
-    #clue {
-        display: none;
-    }
-    .image-container {
-     
-        max-width: 200px; 
-        max-height: 200px; 
-    }
-    #mob2,#mob3 {
-        display: none;
-    }
-  }
-
-  @media (min-width: 1250px) {
-   #mobileClue{
-        display: none;
-   }
-}
 #main-content{
     min-height: 100%;
 }
@@ -101,4 +81,24 @@ footer{
 }
 #copyright:hover{
     color: #80a7d6;
+}
+/* Mobile view*/
+@media (max-width: 1250px) {
+    #clue {
+        display: none;
+    }
+    .image-container {
+     
+        max-width: 200px; 
+        max-height: 200px; 
+    }
+    #mob2,#mob3 {
+        display: none;
+    }
+  }
+
+  @media (min-width: 1250px) {
+   #mobileClue{
+        display: none;
+   }
 }
