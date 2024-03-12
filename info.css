@@ -66,3 +66,14 @@ body{
 #hamburger-menu{
     display: none;
 }
+/* Show arrows by default */
+.toggle-text i {
+    display: inline-block;
+}
+
+/* Hide arrows on larger screens (desktop view) */
+@media screen and (min-width: 501px) {
+    .toggle-text i {
+        display: none;
+    }
+}

@@ -41,14 +41,28 @@
 
     <!--add password creation info-->
     <h1>Parooli ABC</h1>
-<div class="container password-tips alt-color">
-    <h2>Lorem Ipsum</h2>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum sit amet lorem tortor. In scelerisque accumsan quam, eu mattis justo maximus sit amet. Cras porttitor tincidunt accumsan. Proin a elementum metus, a facilisis justo. Quisque urna felis, condimentum vitae leo in, elementum eleifend ante. Nunc rutrum urna nibh, in mattis velit commodo non.</p>
-</div>
-<div class="container password-tips">
-    <h2>Lorem Ipsum</h2>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum sit amet lorem tortor. In scelerisque accumsan quam, eu mattis justo maximus sit amet. Cras porttitor tincidunt accumsan. Proin a elementum metus, a facilisis justo. Quisque urna felis, condimentum vitae leo in, elementum eleifend ante. Nunc rutrum urna nibh, in mattis velit commodo non.</p>
-</div>
-<script src="hamburger-menu.js"></script>
-</body>
-</html>
+    <div class="container password-tips alt-color">
+        <h2>
+            <span class="toggle-text" onclick="toggleText('text1')">Lorem Ipsum <i class="fas fa-chevron-down"></i></span>
+        </h2>
+        <div id="text1" class="text-block hidden">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum sit amet lorem tortor. In scelerisque accumsan quam, eu mattis justo maximus sit amet. Cras porttitor tincidunt accumsan. Proin a elementum metus, a facilisis justo. Quisque urna felis, condimentum vitae leo in, elementum eleifend ante. Nunc rutrum urna nibh, in mattis velit commodo non.</p>
+        </div>
+    </div>
+    <div class="container password-tips">
+        <h2>
+            <span class="toggle-text" onclick="toggleText('text2')">Lorem Ipsum <i class="fas fa-chevron-down"></i></span>
+        </h2>
+        <div id="text2" class="text-block hidden">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum sit amet lorem tortor. In scelerisque accumsan quam, eu mattis justo maximus sit amet. Cras porttitor tincidunt accumsan. Proin a elementum metus, a facilisis justo. Quisque urna felis, condimentum vitae leo in, elementum eleifend ante. Nunc rutrum urna nibh, in mattis velit commodo non.</p>
+        </div>
+    </div>
+    
+    <script>
+    function toggleText(id) {
+        var element = document.getElementById(id);
+        element.classList.toggle("show");
+    }
+    </script>
+    </body>
+    </html>

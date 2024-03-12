@@ -21,3 +21,23 @@ h1{
     right: 3vw;
     top: 3vh;
 }
+
+
+/* Style arrow icons */
+.toggle-text {
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.text-block {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 1s ease;
+}
+
+/* Show text blocks */
+.text-block.show {
+    max-height: 1000px;
+}
