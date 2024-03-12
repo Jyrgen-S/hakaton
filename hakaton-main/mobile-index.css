@@ -3,19 +3,24 @@
     padding:0;
     box-sizing:border-box;
 }
+body{
+    font-size: 1.5vh;
+}
 #main-char{
-    margin: 0 0 5vh 0;
+    margin: 0 inherit 5vh inherit;
+    max-width: 100%;
 }
 #main-char-intro{
     margin: 5vh 10% 5vh 10%;
 }
 #play-btn{
     width: 25vw;
-    height: 8vh;
+    height: 6vh;
+    padding: 1.75vh 4vw 1.75vh 4vw;
 }
 #play-btn:hover{
     width: 24.5vw;
-    height: 7.5vh;
+    height: 5.5vh;
 }
 #nav-buttons{
     display:block;
@@ -24,6 +29,6 @@
 #nav-buttons a{
     padding: 1vh;
     text-decoration: none;
-    font-size: 1em;
+    font-size: 1.5vh;
     display: block;
 }
