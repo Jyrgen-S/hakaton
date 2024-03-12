@@ -31,3 +31,8 @@ h1{
 .text-block.show {
     max-height: 1000px;
 }
+
+
+#nav-buttons{
+    display:block;
+}
