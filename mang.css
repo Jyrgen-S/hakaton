@@ -82,3 +82,23 @@ h1, h2, h3 {
         display: none;
    }
 }
+#main-content{
+    min-height: 100%;
+}
+#main-content:after {
+    content: "";
+    display: block;
+    height: 5vh;
+}
+footer{
+    background: #3780d6;
+    text-align: center;
+    padding: 1vh;
+    color: #f3fafc;
+}
+#copyright{
+    text-decoration: underline;
+}
+#copyright:hover{
+    color: #80a7d6;
+}

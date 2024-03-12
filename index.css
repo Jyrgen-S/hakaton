@@ -3,6 +3,9 @@
     padding:0;
     box-sizing:border-box;
 }
+body{
+    font-size: 1.5vh;
+}
 /*styling for navbar id*/
 #navbar{
     background:#3780d6;
@@ -43,6 +46,7 @@
 #main-char{
     display: block;
     margin: 5vh auto 5vh auto;
+    max-width: 100%;
 }
 #main-char-intro{
     display: block;
@@ -61,6 +65,9 @@
     border-radius: 10px;
     width: 10vw;
     height: 4vh;
+    text-decoration: none;
+    text-align: center;
+    padding: 1vh 2.5vw 1vh 2.5vw;
 }
 #play-btn:hover{
     background: #80a7d6;
@@ -71,6 +78,39 @@ body{
     background: #f3fafc;
     color: #000000;
 }
-#hamburger-menu{
+#main-content{
+    min-height: 100vh;
+}
+footer{
+    background: #3780d6;
+    text-align: center;
+    padding: 1vh;
+    color: #f3fafc;
+}
+#copyright{
+ text-decoration: underline;
+}
+#copyright:hover{
+    color: #80a7d6;
+}
+#authors{
     display: none;
+    border-style: double;
+    border-color: #80a7d6;
+    border-radius: 20px;
+    color: black;
+    text-align: center;
+    width: 20vw;
+    margin: 0 40% 0 40%;
+}
+@media screen and (min-width: 501px) and (max-width: 1024px) {
+    #play-btn{
+        width: 15vw;
+        height: 6vh;
+        padding: 1.5vh 3.75vw 1.5vh 3.75vw;
+    }
+    #play-btn:hover{
+        width: 14.5vw;
+        height: 5.5vh;
+    }
 }
