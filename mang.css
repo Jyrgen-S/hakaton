@@ -1,0 +1,101 @@
+body, p {
+    font-family: 'Lexend Deca', sans-serif;
+}
+
+h1, h2, h3 {
+    font-family: 'Lexend Zetta', sans-serif;
+}
+
+.image-container {
+    position: relative;
+    max-width: 200px; 
+    max-height: 200px;
+}
+.img-fluid{
+    position: relative;
+    max-width: 200px; 
+    max-height: 200px;
+}
+
+.key {
+    max-width: 30px;
+    height: auto;
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+    cursor: pointer; 
+} 
+/*styling for navbar id*/
+#navbar{
+    background:#3780d6;
+    color:#f0f0f0;
+    overflow:hidden;
+    position: relative;
+}
+/*styling for anchors in navbar id*/
+#navbar a{
+    color:#f0f0f0;
+    text-decoration: none;
+}
+/*navbar id heading styling*/
+#navbar img{
+    float:left;
+    height: 3.5em;
+}
+/*styling for unordered lists in navbar id*/
+#navbar ul {
+    float:right;
+    list-style: none;
+    padding-right: 20px;
+}
+/*styling for list items in unordered lists in navbar id*/
+#navbar ul li{
+    float:left;
+}
+/*styling for anchor links in list items in unordered lists in navbar id*/
+#navbar ul li a{
+    display:block;
+    padding:1.25em;
+    text-align:center;
+}
+/*styling for anchor links in hover in list items in unordered lists in navbar id and the current class*/
+#navbar ul li a:hover, .current{
+    background:#80a7d6;
+}
+/* Mobile view*/
+@media (max-width: 1250px) {
+    #clue {
+        display: none;
+    }
+    .image-container {
+     
+        max-width: 200px; 
+        max-height: 200px; 
+    }
+  }
+
+  @media (min-width: 1250px) {
+   #mobileClue{
+        display: none;
+   }
+}
+#main-content{
+    min-height: 100%;
+}
+#main-content:after {
+    content: "";
+    display: block;
+    height: 5vh;
+}
+footer{
+    background: #3780d6;
+    text-align: center;
+    padding: 1vh;
+    color: #f3fafc;
+}
+#copyright{
+    text-decoration: underline;
+}
+#copyright:hover{
+    color: #80a7d6;
+}
