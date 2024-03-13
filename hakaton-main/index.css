@@ -5,6 +5,12 @@
 }
 body{
     font-size: 1.5vh;
+    font-family: 'Lexend Deca', sans-serif;
+    background: #f3fafc;
+    color: #000000;
+}
+h1, h2, h3{
+    font-family: 'Lexend Zetta', sans-serif;
 }
 /*styling for navbar id*/
 #navbar{
@@ -12,6 +18,7 @@ body{
     color:#f0f0f0;
     overflow:hidden;
     position: relative;
+    max-height: 3.5em;
 }
 /*styling for anchors in navbar id*/
 #navbar a{
@@ -46,15 +53,15 @@ body{
 #main-char{
     display: block;
     margin: 5vh auto 5vh auto;
+    max-width: 100%;
 }
 #main-char-intro{
     display: block;
-    margin: 5vh 25% 5vh 25%;
+    margin: 5vh 5% 5vh 5%;
     text-align: left;
 }
-#main-char-intro h2{
-    text-align:center;
-    margin: 5vh 25% 5vh 25%;
+#main-char-intro ol{
+    padding-left: 2vw;
 }
 #play-btn{
     display: block;
@@ -73,20 +80,8 @@ body{
     width: 9.75vw;
     height: 3.75vh;
 }
-body{
-    background: #f3fafc;
-    color: #000000;
-}
-#hamburger-menu{
-    display: none;
-}
 #main-content{
-    min-height: 100%;
-}
-#main-content:after {
-    content: "";
-    display: block;
-    height: 8vh;
+    min-height: 100vh;
 }
 footer{
     background: #3780d6;
@@ -100,21 +95,12 @@ footer{
 #copyright:hover{
     color: #80a7d6;
 }
-#authors{
-    display: none;
-    border-style: double;
-    border-color: #80a7d6;
-    border-radius: 20px;
-    color: black;
-    text-align: center;
-    width: 20vw;
-    margin: 0 40% 0 40%;
-}
-@media screen and (min-width: 768px) and (max-width: 1024px) {
+@media screen and (min-width: 501px) and (max-width: 1024px) {
     #play-btn{
         width: 15vw;
         height: 6vh;
-        padding: 1.5vh 3.75vw 1.5vh 3.75vw;
+        text-align: center;
+        vertical-align: center;
     }
     #play-btn:hover{
         width: 14.5vw;

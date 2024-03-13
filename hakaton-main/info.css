@@ -3,6 +3,15 @@
     padding:0;
     box-sizing:border-box;
 }
+body{
+    font-size: 1.5vh;
+    font-family: 'Lexend Deca', sans-serif;
+    background: #f3fafc;
+    color: #000000;
+}
+h1, h2, h3{
+    font-family: 'Lexend Zetta', sans-serif;
+}
 /*styling for navbar id*/
 #navbar{
     background:#478033;
@@ -41,7 +50,7 @@
     background:#52a036;
 }
 h1{
-    font-size:8em;
+    font-size:6em;
     text-align: center;
     padding: 2.5vh 10% 2.5vh 10%;
 }
@@ -63,28 +72,8 @@ body{
 .password-tips p, .password-tips h2{
     padding: 2.5vh 10% 2.5vh 10%;
 }
-#hamburger-menu{
-    display: none;
-}
-
-
-
-
-
-
-
-
-
-
-
-
 #main-content{
-    min-height: 100%;
-}
-#main-content:after {
-    content: "";
-    display: block;
-    height: 21vh;
+    min-height: 100vh;
 }
 footer{
     background: #478033;

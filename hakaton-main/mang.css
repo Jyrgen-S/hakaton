@@ -1,7 +1,11 @@
 body, p {
     font-family: 'Lexend Deca', sans-serif;
 }
-
+body{
+    font-size: 1.5vh;
+    background: #f3fafc;
+    color: #000000;
+}
 h1, h2, h3 {
     font-family: 'Lexend Zetta', sans-serif;
 }
@@ -26,11 +30,13 @@ h1, h2, h3 {
     cursor: pointer; 
 } 
 /*styling for navbar id*/
+/*styling for navbar id*/
 #navbar{
-    background:#3780d6;
+    background:#36ABB2;
     color:#f0f0f0;
     overflow:hidden;
     position: relative;
+    max-height: 3.5em;
 }
 /*styling for anchors in navbar id*/
 #navbar a{
@@ -60,7 +66,7 @@ h1, h2, h3 {
 }
 /*styling for anchor links in hover in list items in unordered lists in navbar id and the current class*/
 #navbar ul li a:hover, .current{
-    background:#80a7d6;
+    background:#74D9DF;
 }
 /* Mobile view*/
 @media (max-width: 1250px) {
@@ -88,7 +94,7 @@ h1, h2, h3 {
     height: 5vh;
 }
 footer{
-    background: #3780d6;
+    background: #36ABB2;
     text-align: center;
     padding: 1vh;
     color: #f3fafc;
@@ -97,5 +103,5 @@ footer{
     text-decoration: underline;
 }
 #copyright:hover{
-    color: #80a7d6;
+    color: #74D9DF;
 }
