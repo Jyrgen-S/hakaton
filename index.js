@@ -81,3 +81,19 @@ function input(x, ansId, outID ,number , mob){
         }
     }, 3000); // 3000 milliseconds (3 seconds)
 }
+
+function language(cur) {
+  var current = document.getElementById('activeDrop').innerHTML;
+  if (cur != current) {
+    document.getElementById('activeDrop').innerHTML = cur;
+    
+    if (cur == 'EE'){
+      document.getElementById("navEE").style.display = 'block';
+      document.getElementById("navENG").style.display = 'none';
+    }
+    else{
+      document.getElementById("navEE").style.display = 'none';
+      document.getElementById("navENG").style.display = 'block';
+    }
+  }else return
+}
