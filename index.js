@@ -90,10 +90,21 @@ function language(cur) {
     if (cur == 'EE'){
       document.getElementById("navEE").style.display = 'block';
       document.getElementById("navENG").style.display = 'none';
+      changeActive('#EE')
     }
     else{
       document.getElementById("navEE").style.display = 'none';
       document.getElementById("navENG").style.display = 'block';
+      changeActive('#ENG')
     }
   }else return
+}
+
+function changeActive(x){
+
+  var element = document.querySelector(x);
+  //console.log(element)
+  element.classList.replace("dropdown-item active", "dropdown-item");
+ /* var element = document.querySelector(y);
+  element.classList.replace("dropdown-item active", "dropdown-item");*/
 }

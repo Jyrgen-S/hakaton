@@ -86,10 +86,12 @@ footer{
 .dropdown{
     background: #3780d6;
     height: 5em;
+   
 }
 #navENG {
     display: none;
 }
+
 /* Mobile view*/
 @media (max-width: 1250px) {
     #clue {
