@@ -1,3 +1,31 @@
+let hints = {
+  level1: ["Martini jaoks ei ole oluline, et parool oleks keeruline, vaid just ülilihtne meeles pidada.",
+           "Kui alustad klaviatuuril q-tähega ja lõpetad y-tähega, siis mis lõpuks kokku tuleb?"
+          ],
+  level2: ["Vanaema armastas öelda, et tema kalleim vara on Anette.",
+           "Anette sündis 14 aastat tagasi."
+          ],
+  level3: ["Esimene osa paroolist – maailma kuulsaima spiooni nimi.",
+           "Teine osa paroolist – selle spiooni number, mille järgi teda tuntakse."
+          ]
+};
+
+let currentHintIndex = {
+  level1: 0,
+  level2: 0,
+  level3: 0
+};
+
+function toggleHint(level) {
+  let keyImage = document.getElementById(`keyImage${level.charAt(level.length - 1)}`); // Adjust for key image ID
+  let currentLevelHints = hints[level];
+  let currentIndex = currentHintIndex[level];
+  
+  keyImage.title = currentLevelHints[currentIndex];
+  
+  // Update current hint index for next hover
+  currentHintIndex[level] = (currentIndex + 1) % currentLevelHints.length;
+}
 function getinPu(formId, ansId , outID, mob){
   var x = document.getElementById(formId);
   var text = "";
