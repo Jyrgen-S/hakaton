@@ -65,7 +65,7 @@ function input(x, ansId, outID ,number , mob){
     }
 
     if (x == 'lukk5' || x == 'lukk6'){
-      document.getElementById(x).src='./img/shady_dude 1.png';
+      document.getElementById(x).src='./img/shady_dude.png';
     }
   }
 
