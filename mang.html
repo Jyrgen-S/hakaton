@@ -15,6 +15,17 @@
   <body>
   <div id="main-content">
     <header>
+        <div class="dropdown" style="float: right;">
+            <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" id="activeDrop">
+              EE
+            </button>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item active" href="javascript:language('EE')">EE</a></li>
+              <li><a class="dropdown-item" href="javascript:language('ENG')">ENG</a></li>
+             
+            </ul>
+          </div>
+        <div id="navEE">
         <nav id="navbar">
                 <!--add logo-->
             <!--
@@ -23,6 +34,8 @@
     
     
             -->
+           
+            
             <a href="index.html"><img src="https://picsum.photos/80" id="logo"></a>
             <a href="javascript:void(0);" class="icon" onclick="hamburgerMenu()" id="hamburger-menu">
                 <i class="fa-solid fa-bars fa-xl" ></i>
@@ -35,9 +48,38 @@
                 <li>
                     <a href="info.html">Parooli ABC</a>
                 </li>
+                <li>
+                   
+                </li>
             </ul>
             </div>
         </nav>
+    </div>
+    <div id="navENG">
+        <nav id="navbar">
+                <!--add logo-->
+            <!--
+            get mobile navbar working properly
+            -->
+            <a href="index.html"><img src="https://picsum.photos/80" id="logo"></a>
+            <a href="javascript:void(0);" class="icon" onclick="hamburgerMenu()" id="hamburger-menu">
+                <i class="fa-solid fa-bars fa-xl" ></i>
+            </a>
+            <div id="nav-buttons">
+            <ul>
+                <li>
+                    <a href="index.html">Homepage</a>
+                </li>
+                <li>
+                    <a href="info.html">Password ABC</a>
+                </li>
+                <li>
+                   
+                </li>
+            </ul>
+            </div>
+        </nav>
+    </div>
     </header>
     <!-- level 1-->
     <div id="clue" class="container justify-content-center">
@@ -46,7 +88,7 @@
             <div class="col-md-3">
                 <div class="image-container justify-content-center">
                     <img src="./img/10yo_boy_1 1.png" class="img-fluid">
-                    <img src="./img/Võti3.png" class="key" title="Tooltip hint hint hint hint">
+                    <img src="./img/Võti3.png" class="key" id="keyImage1" onmouseover="toggleHint('level1')">
                 </div>
             </div>
             <div class="col-md-6">
@@ -72,7 +114,7 @@
     <!-- Mobile level 1-->
     <div id="mob1">
     <div id="mobileClue" class="container justify-content-center">
-        <h1>Ülesanne 1</h1>
+        <h1>Level 1</h1>
         <div class="row">
             <div class="col-5 col-sm-3">
                 <div class="image-container justify-content-center">
@@ -112,7 +154,7 @@
             <div class="col-md-3">
                 <div class="image-container justify-content-center">
                     <img src="./img/16yo_girl.png" class="img-fluid">
-                    <img src="./img/Võti3.png" class="key" title="Tooltip hint hint hint hint">
+                    <img src="./img/Võti3.png" class="key" id="keyImage2" onmouseover="toggleHint('level2')">
                 </div>
             </div>
             <div class="col-md-6">
@@ -179,7 +221,7 @@
             <div class="col-md-3">
                 <div class="image-container justify-content-center">
                     <img src="./img/shady_dude 1.png" class="img-fluid">
-                    <img src="./img/Võti3.png" class="key" title="Tooltip hint hint hint hint">
+                    <img src="./img/Võti3.png" class="key" id="keyImage3" onmouseover="toggleHint('level3')">
                 </div>
             </div>
             <div class="col-md-6">
