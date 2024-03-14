@@ -1,38 +1,23 @@
-body {
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+body{
     font-size: 1.5vh;
+    font-family: 'Lexend Deca', sans-serif;
     background: #f3fafc;
     color: #000000;
-    font-family: 'Lexend Deca', sans-serif;
 }
-h1, h2, h3 {
+h1, h2, h3{
     font-family: 'Lexend Zetta', sans-serif;
 }
-.image-container {
-    position: relative;
-    max-width: 200px; 
-    max-height: 200px;
-}
-.img-fluid{
-    position: relative;
-    max-width: 200px; 
-    max-height: 200px;
-}
-
-.key {
-    max-width: 30px;
-    height: auto;
-    position: absolute;
-    bottom: 5px;
-    right: 5px;
-    cursor: help; 
-} 
 /*styling for navbar id*/
 #navbar{
-    background:#36ABB2;
+    background:#478033;
     color:#f0f0f0;
-    overflow:hidden;
-    position: relative;
-    max-height: 3.5em;
+    overflow:auto;
+    position: sticky;
 }
 /*styling for anchors in navbar id*/
 #navbar a{
@@ -62,13 +47,36 @@ h1, h2, h3 {
 }
 /*styling for anchor links in hover in list items in unordered lists in navbar id and the current class*/
 #navbar ul li a:hover, .current{
-    background:#74D9DF;
+    background:#52a036;
+}
+h1{
+    font-size:6em;
+    text-align: center;
+    padding: 2.5vh 10% 2.5vh 10%;
+}
+body{
+    background: #f3fafc;
+    color: #000000;
+}
+.container{
+    margin: 5vh 10% 5vh 10%;
+
+}
+.password-tips {
+    text-align: left;
+}
+.alt-color{
+    background: #52a036;
+    color: #f0f0f0;
+}
+.password-tips p, .password-tips h2{
+    padding: 2.5vh 10% 2.5vh 10%;
 }
 #main-content{
     min-height: 100vh;
 }
 footer{
-    background: #36ABB2;
+    background: #478033;
     text-align: center;
     padding: 1vh;
     color: #f3fafc;
@@ -77,35 +85,5 @@ footer{
     text-decoration: underline;
 }
 #copyright:hover{
-    color: #74D9DF;
-}
-
-.dropdown{
-    background: #3780d6;
-    height: 5em;
-   
-}
-#navENG {
-    display: none;
-}
-
-/* Mobile view*/
-@media (max-width: 1250px) {
-    #clue {
-        display: none;
-    }
-    .image-container {
-     
-        max-width: 200px; 
-        max-height: 200px; 
-    }
-    #mob2,#mob3 {
-        display: none;
-    }
-  }
-
-  @media (min-width: 1250px) {
-   #mobileClue{
-        display: none;
-   }
+    color: #52a036;
 }

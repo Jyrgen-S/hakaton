@@ -1,34 +1,20 @@
-body {
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+body{
     font-size: 1.5vh;
+    font-family: 'Lexend Deca', sans-serif;
     background: #f3fafc;
     color: #000000;
-    font-family: 'Lexend Deca', sans-serif;
 }
-h1, h2, h3 {
+h1, h2, h3{
     font-family: 'Lexend Zetta', sans-serif;
 }
-.image-container {
-    position: relative;
-    max-width: 200px; 
-    max-height: 200px;
-}
-.img-fluid{
-    position: relative;
-    max-width: 200px; 
-    max-height: 200px;
-}
-
-.key {
-    max-width: 30px;
-    height: auto;
-    position: absolute;
-    bottom: 5px;
-    right: 5px;
-    cursor: help; 
-} 
 /*styling for navbar id*/
 #navbar{
-    background:#36ABB2;
+    background:#3780d6;
     color:#f0f0f0;
     overflow:hidden;
     position: relative;
@@ -62,50 +48,62 @@ h1, h2, h3 {
 }
 /*styling for anchor links in hover in list items in unordered lists in navbar id and the current class*/
 #navbar ul li a:hover, .current{
-    background:#74D9DF;
+    background:#80a7d6;
+}
+#main-char{
+    display: block;
+    margin: 5vh auto 5vh auto;
+    max-width: 100%;
+}
+#main-char-intro{
+    display: block;
+    margin: 5vh 5% 5vh 5%;
+    text-align: left;
+}
+#main-char-intro ol{
+    padding-left: 2vw;
+}
+#play-btn{
+    display: block;
+    margin: 5vh auto 5vh auto;
+    background: #3780d6;
+    color:#f0f0f0;
+    border-radius: 10px;
+    width: 10vw;
+    height: 4vh;
+    text-decoration: none;
+    text-align: center;
+    padding: 1vh 2.5vw 1vh 2.5vw;
+}
+#play-btn:hover{
+    background: #80a7d6;
+    width: 9.75vw;
+    height: 3.75vh;
 }
 #main-content{
     min-height: 100vh;
 }
 footer{
-    background: #36ABB2;
+    background: #3780d6;
     text-align: center;
     padding: 1vh;
     color: #f3fafc;
 }
 #copyright{
-    text-decoration: underline;
+ text-decoration: underline;
 }
 #copyright:hover{
-    color: #74D9DF;
+    color: #80a7d6;
 }
-
-.dropdown{
-    background: #3780d6;
-    height: 5em;
-   
-}
-#navENG {
-    display: none;
-}
-
-/* Mobile view*/
-@media (max-width: 1250px) {
-    #clue {
-        display: none;
+@media screen and (min-width: 501px) and (max-width: 1024px) {
+    #play-btn{
+        width: 15vw;
+        height: 6vh;
+        text-align: center;
+        vertical-align: center;
     }
-    .image-container {
-     
-        max-width: 200px; 
-        max-height: 200px; 
+    #play-btn:hover{
+        width: 14.5vw;
+        height: 5.5vh;
     }
-    #mob2,#mob3 {
-        display: none;
-    }
-  }
-
-  @media (min-width: 1250px) {
-   #mobileClue{
-        display: none;
-   }
 }

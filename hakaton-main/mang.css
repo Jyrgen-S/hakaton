@@ -1,12 +1,15 @@
-body {
+body, p {
+    font-family: 'Lexend Deca', sans-serif;
+}
+body{
     font-size: 1.5vh;
     background: #f3fafc;
     color: #000000;
-    font-family: 'Lexend Deca', sans-serif;
 }
 h1, h2, h3 {
     font-family: 'Lexend Zetta', sans-serif;
 }
+
 .image-container {
     position: relative;
     max-width: 200px; 
@@ -24,8 +27,9 @@ h1, h2, h3 {
     position: absolute;
     bottom: 5px;
     right: 5px;
-    cursor: help; 
+    cursor: pointer; 
 } 
+/*styling for navbar id*/
 /*styling for navbar id*/
 #navbar{
     background:#36ABB2;
@@ -64,8 +68,30 @@ h1, h2, h3 {
 #navbar ul li a:hover, .current{
     background:#74D9DF;
 }
+/* Mobile view*/
+@media (max-width: 1250px) {
+    #clue {
+        display: none;
+    }
+    .image-container {
+     
+        max-width: 200px; 
+        max-height: 200px; 
+    }
+  }
+
+  @media (min-width: 1250px) {
+   #mobileClue{
+        display: none;
+   }
+}
 #main-content{
-    min-height: 100vh;
+    min-height: 100%;
+}
+#main-content:after {
+    content: "";
+    display: block;
+    height: 5vh;
 }
 footer{
     background: #36ABB2;
@@ -78,34 +104,4 @@ footer{
 }
 #copyright:hover{
     color: #74D9DF;
-}
-
-.dropdown{
-    background: #3780d6;
-    height: 5em;
-   
-}
-#navENG {
-    display: none;
-}
-
-/* Mobile view*/
-@media (max-width: 1250px) {
-    #clue {
-        display: none;
-    }
-    .image-container {
-     
-        max-width: 200px; 
-        max-height: 200px; 
-    }
-    #mob2,#mob3 {
-        display: none;
-    }
-  }
-
-  @media (min-width: 1250px) {
-   #mobileClue{
-        display: none;
-   }
 }
