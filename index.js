@@ -1,35 +1,55 @@
-function getinPu(formId, ansId , outID){
-    var x = document.getElementById(formId);
-    var text = "";
-    var number = x.elements[0].id.slice(-1)
-    text += x.elements[0].value;
-    console.log( x.elements[0])
-    input(text, ansId , outID, number);
-
-   
-    
-  }
+function getinPu(formId, ansId , outID, mob){
+  var x = document.getElementById(formId);
+  var text = "";
+  var number = x.elements[0].id.slice(-1)
+  text += x.elements[0].value;
+  console.log( x.elements[0])
+  input(text, ansId , outID, number , mob);
+}
 
   
-function input(x, ansId, outID ,number){
-      let text1 = document.getElementById(ansId).innerHTML; 
-      let text2 = x;
-      let result = text1.localeCompare(x);
+function input(x, ansId, outID ,number , mob){
+  let text1 = document.getElementById(ansId).innerHTML; 
+  let text2 = x;
+  let result = text1.localeCompare(x);
 
-      if (result == 0) {
-        document.getElementById(outID).innerHTML = "Murdsid parooli. Parool oli " + document.getElementById(ansId).innerHTML;
-        changePic("lukk"+number);
-      } else {
-        document.getElementById(outID).innerHTML = "Ei sisestanud õiget parooli";
-      }
-      return false;
-  }
+  if (result == 0) {
+    document.getElementById(outID).innerHTML = "Murdsid parooli. Parool oli " + document.getElementById(ansId).innerHTML;
+    changePic("lukk"+number);
+    if(mob == 'mob1'){
+      changeCSSAfterDelay('mob1', 'mob2');
+    }
+    if(mob == 'mob2'){
+      changeCSSAfterDelay('mob2', 'mob3')
+    }
+    if(mob == 'mob3'){
+     //
+    }
+
+  } else {
+    document.getElementById(outID).innerHTML = "Ei sisestanud õiget parooli";
+  }}
 
   var form = document.getElementById("frm1");
   function handleForm(event) { event.preventDefault(); } 
   form.addEventListener('submit', handleForm);
 
   var form = document.getElementById("fm2");
+  function handleForm(event) { event.preventDefault(); } 
+  form.addEventListener('submit', handleForm);
+  var form = document.getElementById("frm3");
+  function handleForm(event) { event.preventDefault(); } 
+  form.addEventListener('submit', handleForm);
+
+  var form = document.getElementById("fm4");
+  function handleForm(event) { event.preventDefault(); } 
+  form.addEventListener('submit', handleForm);
+
+  var form = document.getElementById("frm5");
+  function handleForm(event) { event.preventDefault(); } 
+  form.addEventListener('submit', handleForm);
+
+  var form = document.getElementById("fm6");
   function handleForm(event) { event.preventDefault(); } 
   form.addEventListener('submit', handleForm);
 
@@ -48,3 +68,16 @@ function input(x, ansId, outID ,number){
       document.getElementById(x).src='./img/shady_dude.png';
     }
   }
+
+  function changeCSSAfterDelay(vana, uus) {
+    setTimeout(function() {
+        var targetElement = document.getElementById(vana);
+        var newElement = document.getElementById(uus);
+        if (targetElement && newElement) {
+            // Hide the initial element
+            targetElement.style.display = 'none';
+            // Display the new element
+            newElement.style.display = 'block';
+        }
+    }, 3000); // 3000 milliseconds (3 seconds)
+}
