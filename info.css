@@ -3,12 +3,22 @@
     padding:0;
     box-sizing:border-box;
 }
+body{
+    font-size: 1.5vh;
+    background: #f3fafc;
+    color: #000000;
+    font-family: 'Lexend Deca', sans-serif;
+}
+h1, h2, h3 {
+    font-family: 'Lexend Zetta', sans-serif;
+}
 /*styling for navbar id*/
 #navbar{
     background:#478033;
     color:#f0f0f0;
     overflow:auto;
     position: sticky;
+    max-height: 3.5em;
 }
 /*styling for anchors in navbar id*/
 #navbar a{
@@ -44,10 +54,6 @@ h1{
     font-size:8em;
     text-align: center;
     padding: 2.5vh 10% 2.5vh 10%;
-}
-body{
-    background: #f3fafc;
-    color: #000000;
 }
 .container{
     margin: 5vh 10% 5vh 10%;

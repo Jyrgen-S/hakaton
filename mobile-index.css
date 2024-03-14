@@ -7,7 +7,10 @@ body{
     font-size: 1.5vh;
 }
 #main-char{
-    margin: 0 inherit 5vh inherit;
+    margin-top: 0;
+    margin-right: inherit;
+    margin-bottom: 5vh;
+    margin-left: inherit;
     max-width: 100%;
 }
 #main-char-intro{
