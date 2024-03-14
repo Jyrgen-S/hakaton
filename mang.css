@@ -24,7 +24,7 @@ h1, h2, h3 {
     position: absolute;
     bottom: 5px;
     right: 5px;
-    cursor: pointer; 
+    cursor: help; 
 } 
 /*styling for navbar id*/
 #navbar{
@@ -79,6 +79,15 @@ footer{
 #copyright:hover{
     color: #74D9DF;
 }
+
+.dropdown{
+    background:#36ABB2;
+    height: 3.5em;
+}
+#navENG {
+    display: none;
+}
+
 /* Mobile view*/
 @media (max-width: 1250px) {
     #clue {
